@@ -201,7 +201,7 @@ def big_shoe_rebounds
   player_shoe_hash = {}
    game_hash.each do | team, team_hash |
     team_hash[:players].each do | player, player_hash |
-      player_shoe_hash = {:player_name => :shoe}
+      player_shoe_hash = {player[:player_name] => player[:shoe]}
 
       #if player[:player_name] == name
         #player.delete(:player_name)
