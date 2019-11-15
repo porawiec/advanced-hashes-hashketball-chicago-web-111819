@@ -201,7 +201,7 @@ def big_shoe_rebounds
   player_shoe_array = []
    game_hash.each do | team, team_hash |
     team_hash.each do | player, player_hash |
-      p player
+      p player_hash
       #player_shoe_array.push({player[:shoe] => player[:player_name]})
       #player_shoe_array.sort_by { 
       #if player[:player_name] == name
