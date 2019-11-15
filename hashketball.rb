@@ -201,7 +201,8 @@ def big_shoe_rebounds
 
    game_hash.each do | team, team_hash |
     team_hash[:players].each do | player, player_hash |
-      p player[:shoe].max
+      p if player[:shoe] > player[:shoe]
+        return player[:shoe]
 
       #if player[:player_name] == name
         #player.delete(:player_name)
