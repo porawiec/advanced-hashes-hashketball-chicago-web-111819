@@ -209,7 +209,7 @@ def big_shoe_rebounds
      # end
     end
   end
-  p player_shoe_array
+  p player_shoe_array.sort
 end
 
 
