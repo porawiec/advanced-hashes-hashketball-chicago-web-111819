@@ -213,6 +213,7 @@ end
 
 def most_points_scored
   # returns which player has the most points
+  p most_points_scored
 end
 
 
