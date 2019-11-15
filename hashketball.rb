@@ -205,7 +205,7 @@ def big_shoe_rebounds
     end
   end
   players_array.sort_by!{ |hsh| hsh[:shoe] }
-  p players_array
+  p players_array.last
   #if player[:player_name] == name
    # player.delete(:player_name)
   # return player
