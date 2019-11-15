@@ -226,6 +226,7 @@ end
 
 def winning_team
   # returns which team has the most points
+  p game_hash
 end
 
 
