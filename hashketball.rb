@@ -231,6 +231,14 @@ end
 
 def player_with_longest_name
   # returns which player has the longest name
+    players_array = []
+   game_hash.each do | team, team_hash |
+    team_hash[:players].each do | player, player_hash |
+      players_array.push(player)
+    end
+  end
+  players_array.sort_by!{ |hsh| hsh[:player_name].count }
+  p players_array
 end
 
 
