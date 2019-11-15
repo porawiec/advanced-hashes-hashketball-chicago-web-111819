@@ -213,7 +213,15 @@ end
 
 def most_points_scored
   # returns which player has the most points
-  p most_points_scored
+  players_array = []
+   game_hash.each do | team, team_hash |
+    team_hash[:players].each do | player, player_hash |
+      players_array.push(player)
+    end
+  end
+  p players_array
+  #players_array.sort_by!{ |hsh| hsh[:shoe] }
+  #players_array.last[:rebounds]
 end
 
 
