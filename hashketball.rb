@@ -255,4 +255,19 @@ end
 
 def long_name_steals_a_ton?
   # returns true if the player with the longest name had the most steals.
+    # returns which player has the longest name
+    players_array = []
+   game_hash.each do | team, team_hash |
+    team_hash[:players].each do | player, player_hash |
+      players_array.push(player)
+    end
+  end
+  players_array.sort_by!{ |hsh| hsh[:steals] }
+  most_steals = players_array.last[:player_name]
+  
+  if most_steals == player_with_longest_name
+    true
+  else
+    false
+  end
 end
