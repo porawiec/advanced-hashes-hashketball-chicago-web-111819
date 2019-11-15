@@ -200,15 +200,16 @@ def big_shoe_rebounds
  # return the number of rebounds associated with the player that has the largest shoe size
   player_shoe_array = []
    game_hash.each do | team, team_hash |
-    team_hash.each do | player, player_hash |
-      p player
+    p team
+    #team_hash[:players].each do | player, player_hash |
+      #p player
       #player_shoe_array.push({player[:shoe] => player[:player_name]})
       #player_shoe_array.sort_by { 
       #if player[:player_name] == name
         #player.delete(:player_name)
        # return player
      # end
-    end
+    #end
   end
 end
 
