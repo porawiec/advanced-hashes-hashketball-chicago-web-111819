@@ -219,9 +219,8 @@ def most_points_scored
       players_array.push(player)
     end
   end
-  p players_array
-  #players_array.sort_by!{ |hsh| hsh[:shoe] }
-  #players_array.last[:rebounds]
+  players_array.sort_by!{ |hsh| hsh[:points] }
+  players_array.last[:player_name]
 end
 
 
