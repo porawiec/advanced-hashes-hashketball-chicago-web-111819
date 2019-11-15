@@ -237,7 +237,7 @@ def player_with_longest_name
       players_array.push(player)
     end
   end
-  players_array.sort_by!{ |hsh| hsh[:player_name].count }
+  players_array.sort_by!{ |hsh| hsh[:player_name] }
   p players_array
 end
 
