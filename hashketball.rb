@@ -226,16 +226,9 @@ end
 
 def winning_team
   # returns which team has the most points
- jerseys_array = []
-  game_hash.each do | team, team_hash |
-    p team_hash
-    #if team_hash[:team_name] == team_name
-      #team_hash[:players].map do | indiv_players, jersey_hash |
-        #jerseys_array.push(indiv_players[:number])
-      #end
-    #end
-  end
-  jerseys_array
+  home_points = 0
+  away_points = 0
+  p game_hash[:home][:players].reduce(0) { |total, num| total + num[:points] }
 end
 
 
