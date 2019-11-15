@@ -228,7 +228,8 @@ def winning_team
   # returns which team has the most points
   home_points = 0
   away_points = 0
-  p game_hash[:home][:players].reduce(0) { |total, num| total + num[:points] }
+  home_points = game_hash[:home][:players].reduce(0) { |total, num| total + num[:points] }
+  
 end
 
 
