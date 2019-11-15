@@ -205,7 +205,7 @@ def big_shoe_rebounds
     end
   end
   players_array.sort_by!{ |hsh| hsh[:shoe] }
-  players_array[:rebounds].last
+  players_array.last[:rebounds]
 end
 
 
